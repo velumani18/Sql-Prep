@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-dark-950 text-dark-100 antialiased font-sans min-h-screen selection:bg-brand-500/20 selection:text-brand-300;
+  }
+}
+
+/* Custom scrollbars for code editor and tables */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #0b101b;
+}
+::-webkit-scrollbar-thumb {
+  background: #273549;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #384b66;
+}
+
+/* Monaco container helper */
+.monaco-editor {
+  padding-top: 6px;
+}

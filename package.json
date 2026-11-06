@@ -1,0 +1,14 @@
+{
+  "name": "sqlforge-root",
+  "version": "1.0.0",
+  "description": "SQL Learning and Practice Platform",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "test": "powershell -Command \"$env:PYTHONPATH='backend'; backend\\.venv\\Scripts\\pytest backend/tests\"",
+    "backend": "powershell -Command \"$env:PYTHONPATH='backend'; backend\\.venv\\Scripts\\uvicorn app.main:app --host 0.0.0.0 --port 8000\""
+  }
+}
+
